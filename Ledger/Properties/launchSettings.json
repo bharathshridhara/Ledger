@@ -1,7 +1,11 @@
-﻿{
+{
   "iisSettings": {
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
+    "iis": {
+      "applicationUrl": "http://localhost/Ledger",
+      "sslPort": 0
+    },
     "iisExpress": {
       "applicationUrl": "http://localhost:64292/",
       "sslPort": 0
