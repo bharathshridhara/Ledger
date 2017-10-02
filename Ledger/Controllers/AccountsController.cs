@@ -1,19 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Ledger.ViewModels;
 using Ledger.Data;
 using AutoMapper;
 using Ledger.Helpers;
-using System.Web.Http.Routing;
-using System.Net.Http;
-using Microsoft.AspNetCore.Http;
+using Ledger.Attributes;
 
 namespace Ledger.Controllers
 {
-    [Route("api/accounts")]
+    [Route("api/accounts", Name = "accounts")]
+    [LedgerAuthorize]
     public class AccountsController : Controller
     {
         private ILedgerRepository _repo;

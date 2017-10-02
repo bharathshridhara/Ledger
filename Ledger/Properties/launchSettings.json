@@ -3,19 +3,18 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iis": {
-      "applicationUrl": "http://localhost/Ledger",
+      "applicationUrl": "https://localhost/Ledger",
       "sslPort": 0
     },
     "iisExpress": {
       "applicationUrl": "http://localhost:64292/",
-      "sslPort": 0
+      "sslPort": 44361
     }
   },
   "profiles": {
     "IIS Express": {
       "commandName": "IISExpress",
-      "launchBrowser": true,
-      "launchUrl": "api/values",
+      "launchUrl": "api/",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
@@ -28,6 +27,15 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
       "applicationUrl": "http://localhost:64293"
+    },
+    "IIS": {
+      "commandName": "IIS",
+      "launchBrowser": true,
+      "launchUrl": "https://localhost/Ledger",
+      "environmentVariables": {
+        "Key": "Value",
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
     }
   }
 }

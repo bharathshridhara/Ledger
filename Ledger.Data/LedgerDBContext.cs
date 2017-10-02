@@ -17,5 +17,11 @@ namespace Ledger.Data
         public LedgerDBContext()
         {
         }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer("Server=LAPTOP-KUC56DD5\\SQLEXPRESS; Database=Ledger;Trusted_Connection=True;MultipleActiveResultSets=true");
+            base.OnConfiguring(optionsBuilder);
+        }
     }
 }

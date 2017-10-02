@@ -15,6 +15,7 @@ namespace Ledger.Data
         Account GetAccountById(long id);
         IEnumerable<Entry> GetEntriesForAccount(long accountid);
         Entry GetEntryById(long accountid, long id);
+        UserProfile GetUserDetails(string name);
         Task<int> AddEntryAsync(long accountid, Entry viewModel);
         Task<int> SaveEntryAsync(long accountid, long id, Entry viewModel);
     }
